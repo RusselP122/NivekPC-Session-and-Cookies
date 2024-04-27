@@ -1,0 +1,179 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Table */
+.main {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid #eee; /* Adjusted border color for better separation */
+}
+
+.head th {
+    font-weight: bold;
+    padding: 10px; /* Added padding for better spacing */
+    text-align: left; /* Aligning header text to the left */
+}
+
+/* Inputs */
+.form-check-input:focus {
+    border-color: #8bbafe;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Buttons */
+.btn {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:focus {
+    color: #fff;
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* Order Color */
+.order-color {
+    color: blue;
+}
+
+/* Table Header */
+.head th {
+    font-weight: bold;
+    padding: 10px; /* Added padding for better spacing */
+    text-align: left; /* Aligning header text to the left */
+    background-color: #f1f1f1; /* Adding a background color to the header cells */
+}
+
+/* Table Body */
+.main tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Adding alternating background color for better readability */
+}
+
+/* Inputs */
+.form-check-input:focus {
+    border-color: #8bbafe;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Buttons */
+.btn {
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #007bff; /* Default blue color for buttons */
+    border: none;
+    border-radius: 3px;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn:focus {
+    color: #fff;
+    outline: none;
+    box-shadow: none !important;
+}
+
+/* Edit Button */
+.btn-edit {
+    background-color: #28a745; /* Green color for edit button */
+}
+
+/* Delete Button */
+.btn-delete {
+    background-color: #dc3545; /* Red color for delete button */
+}
+
+/* CSS for Payment Status */
+.payment-status {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.paid {
+    background-color: #28a745; /* Green for Paid */
+    color: #fff;
+}
+
+.awaiting {
+    background-color: #ffc107; /* Yellow for Awaiting Authentication */
+    color: #000;
+}
+
+.failed {
+    background-color: #dc3545; /* Red for Payment Failed */
+    color: #fff;
+}
+
+.unpaid {
+    background-color: #6c757d; /* Gray for Unpaid */
+    color: #fff;
+}
+
+
+/* Define styles for different order statuses */
+td.order-status.pending {
+    color: orange; /* Color for pending status */
+}
+
+td.order-status.shipped {
+    color: green; /* Color for shipped status */
+}
+
+td.order-status.processing {
+    color: blue; /* Color for processing status */
+}
+
+td.order-status.delivered {
+    color: purple; /* Color for delivered status */
+}
+
+td.order-status.cancelled {
+    color: red; /* Color for cancelled status */
+}
+
